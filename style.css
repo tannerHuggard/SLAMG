@@ -1,20 +1,25 @@
 body {
-  background-image: url('./assets/binding_dark/binding_dark.png');
+  /* background-image: url('./assets/binding_dark/binding_dark.png'); */
   background-attachment: fixed;
-  /* background-image: url('./assets/wood_1/wood_1.png'); */
+  background-image: url('./assets/wood_1/wood_1_@2X.png');
 }
 
 .full-nav {
   background-color: #101214 !important;
   font-family: 'Montserrat', sans-serif;
+  border-bottom: #dcdde1 solid 2px;
 }
 .navigation {
   display: flex;
   flex-direction: row-reverse;
 }
+
 img {
   height: 350px;
   width: auto;
+}
+.nav-link :active {
+  background-color: #101214;
 }
 
 #heavy-lessons a {
@@ -26,6 +31,7 @@ img {
 #heavy-lessons :hover {
   cursor: pointer;
 }
+
 #hard-lessons a {
   font-size: 2em;
   color: #c23616 !important;
@@ -42,25 +48,40 @@ img {
   font-family: 'Cinzel Decorative', cursive;
 }
 .lesson {
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  /* margin-left: 2.5%;
+  margin-right: 2.5%; */
   padding-top: 3%;
-  padding-bottom: 2%;
+  /* padding-bottom: 2%; */
 }
 
 .heavy-about {
   font-family: 'Montserrat', sans-serif;
+  background-image: url('./assets/binding_dark/binding_dark.png');
   padding: 2% 10%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  border: #dcdde1 solid 2px;
-  border-radius: 20px;
+  /* margin-left: 2.5%;
+  margin-right: 2.5%; */
+  /* border: #dcdde1 solid 2px; */
+  /* border-radius: 20px; */
   background-position: fixed;
   color: #dcdde1;
   text-shadow: black 3px;
   box-shadow: rgba(0, 0, 0, 0.4) 15px 15px 30px;
 }
-
+.rate-info {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  color: #dcdde1;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: black 3px;
+}
+.email {
+  display: flex;
+  justify-content: center;
+  color: #c23616;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: black 3px;
+}
 #instructor {
   display: flex;
   justify-content: center;
@@ -85,28 +106,79 @@ img {
   flex-flow: row wrap;
   color: #dcdde1;
   font-family: 'Montserrat', sans-serif;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .card-header {
   color: #c23616;
+  background-color: #101214;
 }
 
+.dropdown-item {
+  color: #dcdde1;
+}
 .youtube-videos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-flow: row wrap;
 }
-
+.video {
+  padding: 2%;
+}
 iframe {
   border: solid #c23616;
   text-shadow: black 3px;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 25px;
 }
+
+.carousel-inner {
+}
 #test1 {
-  text-align: center;
+  color: #dcdde1;
+}
+
+.carousel-item {
 }
 
 .page-footer {
   color: #c23616;
   padding-top: 10%;
+}
+
+hr {
+  background-color: #eee;
+  border: 0 none;
+  color: #eee;
+  height: 1px;
+  width: 95%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #heavy-lessons a {
+    font-size: 15px;
+    color: #c23616 !important;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+
+  #hard-lessons a {
+    font-size: 15px;
+    color: #c23616 !important;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+
+  img {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+  }
+  .rate-info {
+    font-size: 15px;
+  }
+  .email {
+    font-size: 15px;
+  }
+
+  iframe {
+    height: 100%;
+    width: auto;
+  }
 }
