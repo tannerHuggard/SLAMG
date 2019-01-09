@@ -1,7 +1,8 @@
 body {
   /* background-image: url('./assets/binding_dark/binding_dark.png'); */
   background-attachment: fixed;
-  background-image: url('./assets/wood_1/wood_1_@2X.png');
+  /* background-image: url('./assets/wood_1/wood_1_@2X.png'); */
+  background-color: #101214;
 }
 
 .full-nav {
@@ -23,9 +24,12 @@ img {
 }
 
 #heavy-lessons a {
+  display: flex;
+  justify-content: center;
   font-size: 2em;
   color: #c23616 !important;
-  font-family: 'Cinzel Decorative', cursive;
+  /* font-family: 'Cinzel Decorative', cursive; */
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #heavy-lessons :hover {
@@ -35,17 +39,22 @@ img {
 #hard-lessons a {
   font-size: 2em;
   color: #c23616 !important;
-  font-family: 'Cinzel Decorative', cursive;
+  display: flex;
+  justify-content: center;
+  /* font-family: 'Cinzel Decorative', cursive; */
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #heavy-title {
   color: #c23616 !important;
-  font-family: 'Cinzel Decorative', cursive;
+  /* font-family: 'Cinzel Decorative', cursive; */
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #hard-title {
   color: #c23616 !important;
-  font-family: 'Cinzel Decorative', cursive;
+  /* font-family: 'Cinzel Decorative', cursive; */
+  font-family: 'Titillium Web', sans-serif;
 }
 .lesson {
   /* margin-left: 2.5%;
@@ -56,7 +65,9 @@ img {
 
 .heavy-about {
   font-family: 'Montserrat', sans-serif;
-  background-image: url('./assets/binding_dark/binding_dark.png');
+  /* background-image: url('./assets/binding_dark/binding_dark.png'); */
+  background-image: url('./assets/wood_1/wood_1.png');
+  background-attachment: fixed;
   padding: 2% 10%;
   /* margin-left: 2.5%;
   margin-right: 2.5%; */
@@ -73,25 +84,32 @@ img {
   justify-content: center;
   color: #dcdde1;
   font-family: 'Montserrat', sans-serif;
-  text-shadow: black 3px;
+  text-align: center;
+  margin: 0 auto;
 }
 .email {
   display: flex;
   justify-content: center;
   color: #c23616;
   font-family: 'Montserrat', sans-serif;
-  text-shadow: black 3px;
+  text-align: center;
+  margin: 0 auto;
 }
 #instructor {
   display: flex;
   justify-content: center;
   color: #c23616;
   font-family: 'Montserrat', sans-serif;
+  background-image: url('./assets/wood_1/wood_1.png');
+  background-attachment: fixed;
+  text-shadow: black 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 15px 15px 30px;
 }
 
 #instructor-name {
   color: #c23616;
   font-family: 'Cinzel Decorative', cursive;
+
   font-size: 2em;
 }
 
@@ -115,11 +133,14 @@ img {
 
 .dropdown-item {
   color: #dcdde1;
+  background: #101214;
+  border: #c23616 solid 1px;
 }
 .youtube-videos {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
+  padding-bottom: 5%;
 }
 .video {
   padding: 2%;
@@ -129,19 +150,27 @@ iframe {
   text-shadow: black 3px;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 25px;
 }
-
-.carousel-inner {
+#testimonials {
+  padding-top: 5%;
+  padding-bottom: 8%;
+  background-image: url('./assets/wood_1/wood_1.png');
+  background-attachment: fixed;
+  text-shadow: black 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 15px 15px 30px;
+}
+.carousel-indicators {
+  bottom: -50px;
 }
 #test1 {
+  max-width: 100%;
+  height: auto;
   color: #dcdde1;
-}
-
-.carousel-item {
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .page-footer {
   color: #c23616;
-  padding-top: 10%;
 }
 
 hr {
@@ -171,10 +200,10 @@ hr {
     visibility: hidden;
   }
   .rate-info {
-    font-size: 15px;
+    font-size: 5px;
   }
   .email {
-    font-size: 15px;
+    font-size: 5px;
   }
 
   iframe {
